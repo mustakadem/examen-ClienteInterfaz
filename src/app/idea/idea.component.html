@@ -1,0 +1,100 @@
+
+
+<div class="container">
+  <h3>Ideas</h3>
+  <button sizeColor="red"  class="btn btn-primary m-5" on-click="toogleDiv()">Mostrar Clientes</button>
+
+  <div *ngIf="mostrarDiv">
+    <div *ngFor="let idea of ideas" class="row">
+
+
+
+      <div *ngIf="idea.genero == 'Ciencia-Ficcion'">
+
+        <div *ngIf="idea.votos < 5 " class="negativo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="ficcion">{{idea.genero}}</strong></p>
+        </div>
+
+        <div *ngIf="idea.votos >= 5 " class="positivo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="ficcion">{{idea.genero}}</strong></p>
+        </div>
+
+      </div>
+
+
+      <div *ngIf="idea.genero == 'comedia'">
+
+        <div *ngIf="idea.votos < 5 " class="negativo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="comedia">{{idea.genero}}</strong></p>
+        </div>
+
+        <div *ngIf="idea.votos >= 5 " class="positivo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="comedia">{{idea.genero}}</strong></p>
+        </div>
+
+      </div>
+
+      <div *ngIf="idea.genero == 'aventuras'">
+
+        <div *ngIf="idea.votos < 5 " class="negativo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="aventuras">{{idea.genero}}</strong></p>
+        </div>
+
+        <div *ngIf="idea.votos >= 5 " class="positivo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="aventuras">{{idea.genero}}</strong></p>
+        </div>
+
+      </div>
+
+      <div *ngIf="idea.genero == 'terror'">
+
+        <div *ngIf="idea.votos < 5 " class="negativo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="terror">{{idea.genero}}</strong></p>
+        </div>
+
+        <div *ngIf="idea.votos >= 5 " class="positivo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="terror">{{idea.genero}}</strong></p>
+        </div>
+
+      </div>
+
+      <div *ngIf="idea.genero == 'romantica'">
+
+        <div *ngIf="idea.votos < 5 " class="negativo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="romantica">{{idea.genero}}</strong></p>
+        </div>
+
+        <div *ngIf="idea.votos >= 5 " class="positivo">
+          <p>Name: <strong>{{idea.name}}</strong></p>
+          <p>Votos: <strong>{{idea.votos}}</strong></p>
+          <p>Genero: <strong class="romantica">{{idea.genero}}</strong></p>
+        </div>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>

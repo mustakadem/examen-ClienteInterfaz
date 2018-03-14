@@ -1,0 +1,51 @@
+@import "auxiliar";
+
+%idea{
+  font-family: $fuente;
+}
+
+.positivo{
+  @extend %idea;
+  background-color: green;
+}
+
+.negativo{
+  @extend %idea;
+  background-color: red;
+}
+
+
+.comedia{
+  @extend %idea;
+
+  border-color: yellow;
+  color: yellow;
+}
+
+.terror{
+  @extend %idea;
+  border-color: gray;
+  color: gray;
+
+}
+
+.aventuras{
+  @extend %idea;
+  border-color: red;
+  color: red;
+
+}
+
+.ficcion{
+  @extend %idea;
+  border-color: blue;
+  color: blue;
+
+}
+
+.romantica{
+  @extend %idea;
+  border-color: deeppink;
+  color: deeppink;
+
+}

@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+.positivo, .negativo, .comedia, .terror, .aventuras, .ficcion, .romantica {
+  font-family: sans-serif; }
+
+.positivo {
+  background-color: green; }
+
+.negativo {
+  background-color: red; }
+
+.comedia {
+  border-color: yellow;
+  color: yellow; }
+
+.terror {
+  border-color: gray;
+  color: gray; }
+
+.aventuras {
+  border-color: red;
+  color: red; }
+
+.ficcion {
+  border-color: blue;
+  color: blue; }
+
+.romantica {
+  border-color: deeppink;
+  color: deeppink; }
+
+/*# sourceMappingURL=styles.css.map */
